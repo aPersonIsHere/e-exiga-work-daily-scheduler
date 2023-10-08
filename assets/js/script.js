@@ -44,11 +44,11 @@ $(function () {
     for(var i = 0; i < 9; i++) {
       var fullId = saveButtonEl.eq(i).parent().attr("id");
       id = fullId.split('-')[1];
-      if (($(this).parent().attr('id')).split('-')[1] == id) {
-        hourlyMemos[i] = $(this).siblings('.description').val();
+      if ((($(this).parent().attr('id')).split('-')[1] == id) && ($(this).siblings('.description').val()).trim() != "") {
+        hourlyMemos[i] = ($(this).siblings('.description').val());
+        localStorage.setItem("hourlyMemos", JSON.stringify(hourlyMemos));
+        saveButtonEl = $('.saveBtn');
       }
     }
-    localStorage.setItem("hourlyMemos", JSON.stringify(hourlyMemos));
-    saveButtonEl = $('.saveBtn');
   });
 });

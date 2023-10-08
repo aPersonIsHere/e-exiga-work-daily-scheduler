@@ -1,40 +1,54 @@
-// Wrap all code that interacts with the DOM in a call to jQuery to ensure that
-// the code isn't run until the browser has finished rendering all the elements
-// in the html.
-
 $(function () {
   var today = dayjs();
-  var currentDay = $('#currentDay');
+  var currentDayEl = $('#currentDay');
+  var memoListEl = $('.container-lg');
   var currentHour = today.format('H');
-  console.log(currentHour);
+  var saveButtonEl = $('.saveBtn');
+  var hourlyMemos = [];
 
-  var saveButtonEl = $('.time-block').children();
-  
-  saveButtonEl.on('click', function () {
-    //console.log(this);
-    console.log(saveButtonEl);
-  });
-
-  // TODO: Add a listener for click events on the save button. This code should
-  // use the id in the containing time-block as a key to save the user input in
-  // local storage. HINT: What does `this` reference in the click listener
-  // function? How can DOM traversal be used to get the "hour-x" id of the
-  // time-block containing the button that was clicked? How might the id be
-  // useful when saving the description in local storage?
-
-  //hour 9 - 17 : index at 0 , 8 
-  //
-  // TODO: Add code to apply the past, present, or future class to each time
-  // block by comparing the id to the current hour. HINTS: How can the id
-  // attribute of each time-block be used to conditionally add or remove the
-  // past, present, and future classes?
-  //
-  // TODO: Add code to get any user input that was saved in localStorage and set
-  // the values of the corresponding textarea elements. HINT: How can the id
-  // attribute of each time-block be used to do this?
-  for(var i = 0; i < 8; i++) {
+  function buildMemos (tempHourlyMemos) {
+    if (localStorage.getItem('hourlyMemos') != null) {
+      hourlyMemos = JSON.parse(localStorage.getItem('hourlyMemos'));
+    } else {
+      hourlyMemos = ["", "", "", "", "", "", "", "", ""];
+    }
     
-  }
-  
-  currentDay.text(today.format('dddd [, ] MMMM D'));
+    for(var i = 0; i < 9; i++) {
+      var ii = (i + 9);
+      var iii = (ii == 12) ? 12 : (ii % 12);
+      var ampm = (ii < 12) ? "AM" : "PM";
+      var blockStyle = '';
+      if (ii < currentHour) {
+        blockStyle = "past";
+      } else if (ii > currentHour) {
+        blockStyle = "future";
+      } else {
+        blockStyle = "present";
+      }
+      blockText = hourlyMemos[i];
+
+      $('.container-lg').append("<div id=\"hour-" + ii + "\" class=\"row time-block " + blockStyle + "\"><div class=\"col-2 col-md-1 hour text-center py-3\">" + iii + ampm + "</div><textarea class=\"col-8 col-md-10 description\" rows=\"3\"\">" + blockText + "</textarea><button class=\"btn saveBtn col-2 col-md-1\" aria-label=\"save\"><i class=\"fas fa-save\" aria-hidden=\"true\"></i></button></div>");
+    }
+    saveButtonEl = $('.saveBtn');
+
+    return hourlyMemos;
+    }
+
+  //Hours 9 - 17 --- Index 0 - 8
+
+  buildMemos(hourlyMemos);
+
+  currentDayEl.text(today.format('dddd [, ] MMMM D'));
+
+  saveButtonEl.on('click', function () { //Must always be at the END of the script
+    for(var i = 0; i < 9; i++) {
+      var fullId = saveButtonEl.eq(i).parent().attr("id");
+      id = fullId.split('-')[1];
+      if (($(this).parent().attr('id')).split('-')[1] == id) {
+        hourlyMemos[i] = $(this).siblings('.description').val();
+      }
+    }
+    localStorage.setItem("hourlyMemos", JSON.stringify(hourlyMemos));
+    saveButtonEl = $('.saveBtn');
+  });
 });

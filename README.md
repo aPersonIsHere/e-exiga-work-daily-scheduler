@@ -5,7 +5,7 @@ The Git Repository for Emmanuel Exiga's Work Daily Scheduler.
 The purpose of this repository is to challenge my knowledge in JavaScript (with the inclusion of jQuery and Day.js), CSS, and HTML to create a work daily scheduler. The program auto-generates upon loading the saved information in local storage. From the hours 9am-5pm, the user is able to put hourly memos for their day.
 
 # How To Use the Site
-(On all browsers) Click on this link:[https://apersonishere.github.io/e-exiga-work-daily-scheduler/](https://apersonishere.github.io/e-exiga-work-daily-scheduler/)
+(On all browsers) Click on this link: [https://apersonishere.github.io/e-exiga-work-daily-scheduler/](https://apersonishere.github.io/e-exiga-work-daily-scheduler/)
 On first load of the page, empty memos will appear.
 ![image](https://github.com/aPersonIsHere/e-exiga-work-daily-scheduler/assets/33707404/0218af04-bf5a-4f4d-95e9-513dcbf72eaf)
 

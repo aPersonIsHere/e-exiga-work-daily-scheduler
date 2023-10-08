@@ -10,10 +10,15 @@ On first load of the page, empty memos will appear.
 ![image](https://github.com/aPersonIsHere/e-exiga-work-daily-scheduler/assets/33707404/0218af04-bf5a-4f4d-95e9-513dcbf72eaf)
 
 Type a memo into a box and to save it to memory by press the save button at the respective right of the text.
-![image](https://github.com/aPersonIsHere/e-exiga-work-daily-scheduler/assets/33707404/4cfdb1b7-b8f3-44c5-9f1d-367f3c32e54a)
+![image](https://github.com/aPersonIsHere/e-exiga-work-daily-scheduler/assets/33707404/a56ce5bf-d322-4d18-bafa-5e7b179c4890)
 
 On reload of the page, the information that was saved will appear.
-![image](https://github.com/aPersonIsHere/e-exiga-work-daily-scheduler/assets/33707404/a56ce5bf-d322-4d18-bafa-5e7b179c4890)
+![image](https://github.com/aPersonIsHere/e-exiga-work-daily-scheduler/assets/33707404/4cfdb1b7-b8f3-44c5-9f1d-367f3c32e54a)
+
+### IMPORTANT
+If you need to reset an hour memo, simply replace it with a new memo or put a single period. The program will not save to memory a textbox with only spaces.
+![image](https://github.com/aPersonIsHere/e-exiga-work-daily-scheduler/assets/33707404/65277b23-a6a2-4b8b-94a6-b06dbe8afb9d)
+
 
 ### (All screenshots taken using Lightshot from https://app.prntscr.com/en/ . I am not endorsed by Skillbrains.)
 

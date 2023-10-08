@@ -1,99 +1,26 @@
-# 05 Third-Party APIs: Work Day Scheduler
+# e-exiga-js-fundamentals-quiz
+The Git Repository for Emmanuel Exiga's Work Daily Scheduler.
 
-## Your Task
+# Purpose
+The purpose of this repository is to challenge my knowledge in JavaScript (with the inclusion of jQuery and Day.js), CSS, and HTML to create a work daily scheduler. The program auto-generates upon loading the saved information in local storage. From the hours 9am-5pm, the user is able to put hourly memos for their day.
 
-Create a simple calendar application that allows a user to save events for each hour of a typical working day (9am&ndash;5pm) by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+# How To Use the Site
+(On all browsers) Click on this link:[ https://apersonishere.github.io/e-exiga-js-fundamentals-quiz/](https://apersonishere.github.io/e-exiga-work-daily-scheduler/)
+On first load of the page, empty memos will appear.
+![image](https://github.com/aPersonIsHere/e-exiga-work-daily-scheduler/assets/33707404/0218af04-bf5a-4f4d-95e9-513dcbf72eaf)
 
-You'll need to use the [Day.js](https://day.js.org/en/) library to work with date and time. Be sure to read the documentation carefully and concentrate on using Day.js in the browser.
+Type a memo into a box and to save it to memory by press the save button at the respective right of the text.
+![image](https://github.com/aPersonIsHere/e-exiga-work-daily-scheduler/assets/33707404/4cfdb1b7-b8f3-44c5-9f1d-367f3c32e54a)
 
-## User Story
+On reload of the page, the information that was saved will appear.
+![image](https://github.com/aPersonIsHere/e-exiga-work-daily-scheduler/assets/33707404/a56ce5bf-d322-4d18-bafa-5e7b179c4890)
 
-```md
-AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
-```
+### (All screenshots taken using Lightshot from https://app.prntscr.com/en/ . I am not endorsed by Skillbrains.)
 
-## Acceptance Criteria
 
-```md
-GIVEN I am using a daily planner to create a schedule
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
-WHEN I scroll down
-THEN I am presented with timeblocks for standard business hours of 9am&ndash;5pm
-WHEN I view the timeblocks for that day
-THEN each timeblock is color coded to indicate whether it is in the past, present, or future
-WHEN I click into a timeblock
-THEN I can enter an event
-WHEN I click the save button for that timeblock
-THEN the text for that event is saved in local storage
-WHEN I refresh the page
-THEN the saved events persist
-```
 
-The following animation demonstrates the application functionality:
+# Disclaimers
+I cannot promise that this repository will not damage any of your work, nor that I am liable for any damages if this repository is used. For more details, please refer to the MIT license.
 
-<!-- @TODO: create ticket to review/update image) -->
-![A user clicks on slots on the color-coded calendar and edits the events.](./Assets/05-third-party-apis-homework-demo.gif)
-
-## Grading Requirements
-
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
-
-This Challenge is graded based on the following criteria:
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the above acceptance criteria plus the following:
-
-  * Uses a date utility library to work with date and time
-
-### Deployment: 32%
-
-* Application deployed at live URL
-
-* Application loads with no errors
-
-* Application GitHub URL submitted
-
-* GitHub repo contains application code
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate
-
-* Application user interface style is clean and polished
-
-* Application resembles the mock-up functionality provided in the Challenge instructions
-
-### Repository Quality: 13%
-
-* Repository has a unique name
-
-* Repository follows best practices for file structure and naming conventions
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages
-
-* Repository contains quality README file with description, screenshot, and link to deployed application
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application
-
-* The URL of the GitHub repository, with a unique name and a README describing the project
-
-- - -
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+## Credits
+Emmanuel Exiga. --- Lead Programmer.   UT Austin Coding Bootcamp. --- Reference code.

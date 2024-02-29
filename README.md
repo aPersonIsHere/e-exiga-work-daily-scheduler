@@ -29,3 +29,12 @@ I cannot promise that this repository will not damage any of your work, nor that
 
 ## Credits
 Emmanuel Exiga. --- Lead Programmer.   UT Austin Coding Bootcamp. --- Reference code.
+
+## Questions and Contact
+
+### My GitHub: [aPersonIsHere](https://www.github.com/aPersonIsHere)
+
+### My Email: emmanuelexiga.2000@gmail.com
+
+Feel free to reach out through email by highlighting my email address and copy-and-paste it to your recipient. 
+Feel free to ask further questions, provide suggestions, or to send a thank you note!
